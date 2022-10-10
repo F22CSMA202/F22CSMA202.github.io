@@ -24,7 +24,7 @@ body{
 
 .container>* {
     border: 2px solid green;
-    background-color: rgb(211, 77, 157);
+    background-color: rgb(58, 19, 231);
     padding: 10px;
     
 }
@@ -57,7 +57,7 @@ body{
 
 .flexContainer>* {
     border: 2px solid green;
-    background-color: rgb(205, 234, 40);
+    background-color: rgb(69, 40, 234);
     padding: 100px;
 }
 
