@@ -107,8 +107,8 @@ a {
   /* LOGO */
   
   .logo {
-  
-  font-size: 35px;
+
+    font-size: 1.5vw;
   font-weight: bold;
   
   }
@@ -121,13 +121,32 @@ a {
   
   gap: 5.5em;
   
-  font-size: 100%;
+  font-size: 1.5vw;
   font-weight: bold;
   
   }
   
   .menu li {
   
-  padding: 5px 14px;
-  
+  padding: 2% 14px;
+      
   }
+
+  /*Iphone width*/
+@media (max-width: 480px) {
+  .logo {
+  
+    font-size: 1vw;
+
+    }
+    .menu {
+  
+      display: flex;
+      
+      gap: 5.5em;
+      
+      font-size: 0.5vw;
+      
+      }
+}
+
