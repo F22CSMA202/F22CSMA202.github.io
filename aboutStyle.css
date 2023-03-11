@@ -1,0 +1,175 @@
+body 
+{
+    margin: 0;
+    padding: 0;
+    font-family: "Acephimere", sans-serif;
+}
+  
+* 
+{
+  
+    margin: 0;
+    
+    padding: 0;
+    
+    box-sizing: border-box;
+    
+}
+  
+  
+  /*PARAGRAPHS*/
+  
+pb
+{
+    font-size: 2vw;
+    font-weight: bold;/* Set paragraph to bold*/
+}
+  
+b
+{
+    font-size: 2vw;
+    font-weight: bold;
+    color:#41D3BD;/* Set paragraph to bold blue*/
+}
+  
+o
+{
+    font-size: 2vw;
+    font-weight: bold;
+    color:#f4ac45;/* Set paragraph to bold orange */
+}
+  
+r
+{
+    font-size: 2vw;
+    font-weight: bold;
+    color:#ff5964;/* Set paragraph to bold red */
+}
+  
+  /*HEADERS*/
+h1
+{
+    text-align: center;
+    font-size: 2vw;
+    color: #003049;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-weight: bold;
+    font-style: Arial, Helvetica, sans-serif;
+
+}
+
+h2
+{
+    font-size: 1.8vw;
+}
+  
+a 
+{
+    
+    text-decoration: none;
+    
+}
+    
+li
+{
+    
+    list-style: none;
+    
+}
+  
+    /*NAVBAR STYLING*/
+.navbar 
+{
+  
+    display: flex;
+  
+    align-items: center;
+    
+    justify-content: space-between;
+    
+    padding: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+    background-color: rgba(255, 255, 255, 0);
+    
+    color: #003049;
+   
+}
+    
+    .nav-links a 
+{
+    
+    color: #003049;
+    
+}
+
+.nav-links a:hover 
+{
+
+    color: #138fd1;
+      
+    transition: 0.3s ease;
+      
+}
+    
+    /* LOGO */
+    
+.logo 
+{
+    
+    font-size: 1.5vw;
+    font-weight: bold;
+    
+}
+    
+    /* NAVBAR MENU */
+    
+.menu 
+{
+    
+    display: flex;
+    
+    gap: 5.5em;
+    
+    font-size: 1.5vw;
+    font-weight: bold;
+    
+}
+    
+.menu li 
+{
+    
+    padding: 2% 14px;
+    
+}
+
+.about-container
+{
+    position: absolute;
+    width: 93vw;
+    height: 1.5vw;
+    background-color: #F2F7F9;
+    padding-bottom: 85vh;
+    margin-left: 2.6vw;
+}
+
+.about-img img
+{
+    float: left;
+    margin-left: 2%;
+    padding-right: 1.5%;
+    padding-bottom: 0.2%;
+}
+
+.about-container p
+{
+    align-items: center;
+    text-align: justify;
+    font-size: 1.8vw;
+    padding: 2.5vh;
+    padding-left: 1.8vw;
+    margin-top: -0.5em ;
+    margin-bottom: 0.2em ;
+}
