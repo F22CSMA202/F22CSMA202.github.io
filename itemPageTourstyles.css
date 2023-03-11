@@ -1,0 +1,32 @@
+#pageTourHeader1 {
+    text-align: center;
+    margin: 25px;
+    color: #41D3BD;
+}
+
+#pageTourHeader2 {
+    text-align: center;
+    margin: 25px;
+    color: #F4AC45;
+}
+
+#pageTourHeader3 {
+    text-align: center;
+    margin: 25px;
+    color: #FF5964;
+}
+
+#indexInfoText1 {
+    margin: 50px;
+    color: #41D3BD;
+}
+
+#indexInfoText2 {
+    margin: 50px;
+    color: #F4AC45;
+}
+
+#indexInfoText3 {
+    margin: 50px;
+    color: #FF5964;
+}

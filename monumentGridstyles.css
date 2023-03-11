@@ -1,0 +1,19 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 30px;
+}
+
+.column {
+    flex: 25%;
+}
+  
+.column img {
+    vertical-align: middle;
+    margin: 10px;
+    width: 90%;
+}
+
+.column img:hover{
+    opacity: 25%;
+}

@@ -1,0 +1,67 @@
+#storiesHeader {
+    text-align: center;
+    margin: 25px
+}
+
+#storiesHeader2 {
+    margin: 50px
+}
+
+.Container{
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    padding:  10px;
+    padding-bottom:5px;
+    overflow-x: auto;
+    gap: 20px;
+}
+
+.itemCards {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.itemCards img {
+    border-radius: 5px 5px 0 0;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.itemCards:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.itemInfo {
+    margin: 25px;
+    width: 400px;
+    overflow-wrap: break-word;
+}
+
+.button {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    align-self: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.button1 {
+    background-color: #41D3BD;
+}
+
+.button2 {
+    background-color: #F4AC45;
+}
+
+.button3 {
+    background-color: #FF5964;
+}
