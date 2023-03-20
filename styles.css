@@ -83,6 +83,56 @@ r
       
   }
     
+
+   /* } */ 
+  
+  /* LOGO */
+  
+  .logo {
+
+    font-size: 1.5vw;
+  font-weight: bold;
+  
+  }
+  
+  /* NAVBAR MENU */
+  
+  .menu {
+  
+  display: flex;
+  
+  gap: 5.5em;
+  
+  font-size: 1.5vw;
+  font-weight: bold;
+  
+  }
+  
+  .menu li {
+  
+  padding: 2% 14px;
+      
+  }
+
+  /*Iphone width*/
+@media (max-width: 480px) {
+  .logo {
+  
+    font-size: 1vw;
+
+    }
+    .menu {
+  
+      display: flex;
+      
+      gap: 5.5em;
+      
+      font-size: 0.5vw;
+      
+      }
+}
+
+
       /*NAVBAR STYLING*/
   .navbar 
   {
@@ -149,3 +199,4 @@ r
       padding: 2% 14px;
       
   }
+
