@@ -1,0 +1,202 @@
+<!-- 
+DEVELOPER NOTES
+-Assigned to ZULLY
+-include nav bar
+-for thumbnail images, use whatever is already in the shared data folder
+https://woodburyedu.sharepoint.com/:f:/r/sites/2023_SPRING_CSMA.311.S1/Shared%20Documents/Mapping%20Burbank?csf=1&web=1&e=JNfDDC
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MappingBurbank - Odd Museums (Tour)</title>
+    <link href="itemPageTourstyles.css" rel="stylesheet" type="text/css">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <nav class="navbar">
+
+        <!-- LOGO -->
+        
+        <div class="logo">Mapping <br/> Burbank</div>
+        
+          <!-- NAVIGATION MENU -->
+          
+          <ul class="nav-links">
+          
+            <!-- NAVIGATION MENUS -->
+            
+            <div class="menu">
+            
+              <li><a href="/home">Monuments</a></li>
+              
+              <li><a href="/stories">Stories</a></li>
+              
+              <li><a href="/about">About The Project</a></li>
+            
+          </div>
+          
+          </ul>
+        
+    </nav>
+
+    <!-- PAGE INDEX -->
+    <!-- CHANGE ID TO MATCH COLOR THEME indexInfoText(1, 2, 3)-->
+    <h3 id="indexInfoText2">
+        Stories / Culture / Odd Museums
+    </h3>
+
+    <div class="container3">
+        <!-- CHANGE STUDENT'S PROJECT TITLE -->
+        <!-- CHANGE ID TO MATCH COLOR THEME pageTourHeader(1, 2, 3)-->
+        <h1 id="pageTourHeader2">
+            Odd Museums
+        </h1>
+        <!-- UPDATE LINK TO CORRESPONDING MONUMENT LINK-->
+        <a href="/home">
+            <button  class="button">To Monument</button>
+        </a>
+    </div>
+
+    <div class="container"> 
+        <div class="subCon1">
+            <div class="vidRatio">
+                <!-- UPDATE VIDEO LINK OR VIDEO ASSET-->
+                <iframe class="responsive-iframe" src="https://www.youtube.com/embed/zqLEO5tIuYs"></iframe>
+            </div>
+
+            <div>
+                <!-- UPDATE TEXT SUMMARY-->
+                <p class="sumText">
+                    In a small town nestled in the hills, there stood a peculiar museum that was unlike any
+other in the world. The Odd Museum was a collection of the most unusual and bizarre artifacts
+from every corner of the globe. The museum was founded by someone who had always been
+fascinated by the strange and unusual. After collecting oddities and curiosities, the museum
+finally opened to showcase the findings. The Odd Museum quickly became a popular destination
+for locals and tourists alike. Visitors could see everything from a two-headed snake preserved in
+formaldehyde to a section dedicated to the history of Burbank. <br>
+But the Odd Museum was more than just a collection of curiosities. It was a celebration
+of the diversity of human experience, and the many different ways in which people have chosen
+to express themselves.The museum highlighted the unique and unconventional, and challenged
+visitors to think about the world in a different way. <br>
+For many, the Odd Museum was a place of inspiration and wonder. It reminded them that
+there was beauty to be found in the unexpected, and that the world was a much more fascinating
+and mysterious place than they had ever imagined. <br>
+As the years passed, the Odd Museum became an important cultural institution, and a
+symbol of the small town's spirit of open-mindedness and curiosity. Future generations will
+continue to explore the world with wonder and imagination through the museum's lens.
+                </p>
+            </div>
+        </div>
+        
+        <div class="subCon2">
+            <div class="container2">
+                <div class="imgRatio">
+                    <!-- UPDATE ID CARD IMAGE-->
+                    <img class="responsive-img" src="images/Triggers/Odd Museums.jpg">
+                </div>
+
+                <div class="slideshow-container">
+
+                    <!-- DUPLICATE AS MANY SLIDE NEEDED-->
+                    <!-- UPDATE IMAGE (ALL IMAGES WILL FIT INTO A 1:1 ASPECT-RATIO)-->
+                    <div class="Slides">
+                        <div class="imgRatio">
+                            <img class="responsive-img" src="images/Culture/Kit - Odd Museums/Images/Curious Havens.png">
+                        </div>
+                    </div>
+
+                    <div class="Slides">
+                        <div class="imgRatio">
+                            <img class="responsive-img" src="images/Culture/Kit - Odd Museums/Images/Golden Dragon.png">
+                        </div>
+                    </div>
+
+                    <div class="Slides">
+                        <div class="imgRatio">
+                            <img class="responsive-img" src="images/Culture/Kit - Odd Museums/Images/image-removebg-preview (8).png">
+                        </div>
+                    </div>
+
+                    <div class="Slides">
+                        <div class="imgRatio">
+                            <img class="responsive-img" src="images/Culture/Kit - Odd Museums/Images/image-removebg-preview (8).png">
+                        </div>
+                    </div>
+
+                    <div class="Slides">
+                        <div class="imgRatio">
+                            <img class="responsive-img" src="images/Culture/Kit - Odd Museums/Images/image-removebg-preview (10).png">
+                        </div>
+                    </div>
+
+                    <div class="Slides">
+                        <div class="imgRatio">
+                            <img class="responsive-img" src="images/Culture/Kit - Odd Museums/Images/image-removebg-preview (11).png">
+                        </div>
+                    </div>
+
+                    <div class="Slides">
+                        <div class="imgRatio">
+                            <img class="responsive-img" src="images/Culture/Kit - Odd Museums/Images/image-removebg-preview (12).png">
+                        </div>
+                    </div>
+
+                    <div class="Slides">
+                        <div class="imgRatio">
+                            <img class="responsive-img" src="images/Culture/Kit - Odd Museums/Images/museumlogo_back.png">
+                        </div>
+                    </div>
+
+                    <div class="Slides">
+                        <div class="imgRatio">
+                            <img class="responsive-img" src="images/Culture/Kit - Odd Museums/Images/White Star Four Points.png">
+                        </div>
+                    </div>
+            
+
+                    
+
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
+
+            </div>
+            
+        </div>
+
+    </div>
+
+
+    <!-- JS SLIDES SHOW -->
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("Slides");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+    </script>
+
+</body>
+
+</html>
