@@ -1,0 +1,171 @@
+<!-- 
+DEVELOPER NOTES
+-Assigned to ZULLY
+-include nav bar
+-for thumbnail images, use whatever is already in the shared data folder
+https://woodburyedu.sharepoint.com/:f:/r/sites/2023_SPRING_CSMA.311.S1/Shared%20Documents/Mapping%20Burbank?csf=1&web=1&e=JNfDDC
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MappingBurbank - Spanish Heritage (Tour)</title>
+    <link href="itemPageTourstyles.css" rel="stylesheet" type="text/css">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <nav class="navbar">
+
+        <!-- LOGO -->
+        
+        <div class="logo">Mapping <br/> Burbank</div>
+        
+          <!-- NAVIGATION MENU -->
+          
+          <ul class="nav-links">
+          
+            <!-- NAVIGATION MENUS -->
+            
+            <div class="menu">
+            
+              <li><a href="/home">Monuments</a></li>
+              
+              <li><a href="/stories">Stories</a></li>
+              
+              <li><a href="/about">About The Project</a></li>
+            
+          </div>
+          
+          </ul>
+        
+    </nav>
+
+    <!-- PAGE INDEX -->
+    <!-- CHANGE ID TO MATCH COLOR THEME indexInfoText(1, 2, 3)-->
+    <h3 id="indexInfoText2">
+        Stories / Culture / Spanish Heritage
+    </h3>
+
+    <div class="container3">
+        <!-- CHANGE STUDENT'S PROJECT TITLE -->
+        <!-- CHANGE ID TO MATCH COLOR THEME pageTourHeader(1, 2, 3)-->
+        <h1 id="pageTourHeader2">
+            Spanish Heritage
+        </h1>
+        <!-- UPDATE LINK TO CORRESPONDING MONUMENT LINK-->
+        <a href="/home">
+            <button  class="button">To Monument</button>
+        </a>
+    </div>
+
+    <div class="container"> 
+        <div class="subCon1">
+            <div class="vidRatio">
+                <!-- UPDATE VIDEO LINK OR VIDEO ASSET-->
+                <iframe class="responsive-iframe" src="https://www.youtube.com/embed/zqLEO5tIuYs"></iframe>
+            </div>
+
+            <div>
+                <!-- UPDATE TEXT SUMMARY-->
+                <p class="sumText">
+                    The Spanish Heritage tour takes viewers to Mission San Fernando Rey de
+Espana, Los Encinos Historical Park, Casa Adobe de San Rafael, and Compass
+Tree Park, starting and ending at Woodbury University. The Spanish began to
+settle in the San Fernando Valley in 1797, starting with the establishment of the
+Mission San Fernando, and the gifting of land to Spanish nobility. With so much
+land given out at one time, it was hard for landholders to know which land was
+theirs and which was their neighbors, so four sycamore trees were planted in the
+shape of a compass to establish set boundaries between land, and to help
+travelers find their way. With land holdings established and roads created, places
+like the Adobe de San Rafael and the De la Osa Adobe at the Los Encinos
+historical park began to thrive. <br>
+Each location has a voice-over available. The mission has two additional
+triggers that play music and one image layover. Casa Adobe de San Rafael has a
+gallery wall of historic pictures along with its voice-over, and Compass Tree Park
+has a 3D model showing the viewer what the landscape may have looked like
+during Spanish rule. Each voice-over has location-specific background noises,
+adding more depth to the experience.
+                </p>
+            </div>
+        </div>
+        
+        <div class="subCon2">
+            <div class="container2">
+                <div class="imgRatio">
+                    <!-- UPDATE ID CARD IMAGE-->
+                    <img class="responsive-img" src="images/ratioTest.jpg">
+                </div>
+
+                <div class="slideshow-container">
+
+                    <!-- DUPLICATE AS MANY SLIDE NEEDED-->
+                    <!-- UPDATE IMAGE (ALL IMAGES WILL FIT INTO A 1:1 ASPECT-RATIO)-->
+                    <div class="Slides">
+                        <div class="imgRatio">
+                            <img class="responsive-img" src="images/History/Nolan - Spanish Heritage/Mission san fernando.jpg">
+                        </div>
+                    </div>
+
+                    <div class="Slides">
+                        <div class="imgRatio">
+                            <img class="responsive-img" src="images/History/Nolan - Spanish Heritage/Mission san fernando2.jpg">
+                        </div>
+                    </div>
+
+                    <div class="Slides">
+                        <div class="imgRatio">
+                            <img class="responsive-img" src="images/History/Nolan - Spanish Heritage/rancho san rafael-etching.jpg">
+                        </div>
+                    </div>
+
+                    <div class="Slides">
+                        <div class="imgRatio">
+                            <img class="responsive-img" src="images/History/Nolan - Spanish Heritage/TomasSanchezGlendaleCasaAdobeDeSanRafael.jpg">
+                        </div>
+                    </div>
+
+                    
+
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
+
+            </div>
+            
+        </div>
+
+    </div>
+
+
+    <!-- JS SLIDES SHOW -->
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("Slides");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+    </script>
+
+</body>
+
+</html>
