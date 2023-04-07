@@ -123,36 +123,68 @@ li
       
 }
     
-    /* LOGO */
-    
-.logo 
-{
-    
-    font-size: 1.5vw;
+    /*NAVBAR STYLING*/
+
+  /* NEW TOP NAVIGATION */
+.topNav {
+    background-color: #003049;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    padding: 0 20px 0 60px;
     font-weight: bold;
-    
-}
-    
-    /* NAVBAR MENU */
-    
-.menu 
-{
-    
+  }
+  
+  .topNav a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    font-size: 25px;
+    padding: 30px 0 30px 0;
+    border-left: solid white;
+  }
+  
+  .topNav_top2 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+  
+  #noline {
+    border-left: none;
+  }
+  
+  header{
+    position: relative;
+    z-index: 1;
+  }
+  
+  
+  .navbar {
+    position: relative;
     display: flex;
+    background-color: #003049;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
+  
+  
+    }
     
-    gap: 5.5em;
+    .nav-links a {
     
-    font-size: 1.5vw;
-    font-weight: bold;
+    color: #003049;
     
-}
+    }
+    .nav-links a:hover {
     
-.menu li 
-{
-    
-    padding: 2% 14px;
-    
-}
+      color: #138fd1;
+      
+      transition: 0.3s ease;
+      
+      }
 
 .about-container
 {
