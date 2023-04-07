@@ -35,7 +35,7 @@
 
 .sumText {
     padding-top: 25px;
-    font-size: x-large;
+    font-size: 14pt;
 }
 
 /* TEXT SUMMURY STYLES */
@@ -174,4 +174,32 @@
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
+}
+
+/* NEW TOP NAVIGATION */
+.topNav {
+    background-color: #003049;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    padding: 0 20px 0 60px;
+}
+
+.topNav a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    font-size: 25px;
+    padding: 30px 0 30px 0;
+    border-left: solid white;
+}
+
+.topNav_top2 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+#noline {
+    border-left: none;
 }
