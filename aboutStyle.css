@@ -47,17 +47,26 @@ r
 }
   
   /*HEADERS*/
+
+.title > *
+{
+    padding-left: 40%;
+    padding-top: 1%;
+    z-index: 2;
+
+    
+}
+
 h1
 {
-    text-align: center;
+    
     font-size: 2vw;
     color: #003049;
-    padding-top: 1%;
-    padding-bottom: 1%;
     font-weight: bold;
     font-style: Arial, Helvetica, sans-serif;
 
 }
+
 
 h2
 {
@@ -147,29 +156,39 @@ li
 
 .about-container
 {
+
     position: absolute;
-    width: 93vw;
+    width: 88vw;
     height: 1.5vw;
     background-color: #F2F7F9;
     padding-bottom: 85vh;
     margin-left: 2.6vw;
+
 }
 
-.about-img img
+.about-img
 {
-    float: left;
-    margin-left: 2%;
-    padding-right: 1.5%;
-    padding-bottom: 0.2%;
+    margin-top: -2%;
+}
+.about-img > *
+{
+    padding-left: 6%;
+    margin-bottom: 2%;
+    z-index: 1;
+    
 }
 
-.about-container p
+.about-container p 
 {
-    align-items: center;
     text-align: justify;
     font-size: 1.8vw;
-    padding: 2.5vh;
-    padding-left: 1.8vw;
-    margin-top: -0.5em ;
-    margin-bottom: 0.2em ;
+    margin-bottom: 2%;
+
+}
+
+.about-text
+{
+    margin-top: -40%;
+    margin-left: 40%;
+    padding-right: 6%;
 }

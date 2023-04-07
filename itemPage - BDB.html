@@ -12,11 +12,37 @@ https://woodburyedu.sharepoint.com/:f:/r/sites/2023_SPRING_CSMA.311.S1/Shared%20
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Item Page</title>
+  
 	<link rel="stylesheet" type="text/css" href="BDBitemPageStyle.css">
 	<!--link rel="icon" href="..\Website Images\Logo.png"-->
 </head>
 
 <body>
+    
+    <button id="transitionButton">Transition</button>
+    <script> 
+        document.getElementById("transitionButton").addEventListener("click", function() {
+        // Get the images container element
+        var imagesContainer = document.querySelector(".images");
+      
+        // Set the initial left position of the images container
+        imagesContainer.style.left = "0";
+      
+        // Animate the left position of the images container to move it to the right
+        var animation = imagesContainer.animate([
+          { left: "0" },
+          { left: "100%" }
+        ], {
+          duration: 1000,
+          easing: "ease-out"
+        });
+      
+        // Remove the images container from the DOM after the animation completes
+        animation.onfinish = function() {
+          imagesContainer.remove();
+        };
+      });
+    </script>
 
     <div class = "images">
 
