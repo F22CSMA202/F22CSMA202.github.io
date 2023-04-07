@@ -47,17 +47,26 @@ r
 }
   
   /*HEADERS*/
+
+.title > *
+{
+    padding-left: 40%;
+    padding-top: 1%;
+    z-index: 2;
+
+    
+}
+
 h1
 {
-    text-align: center;
+    
     font-size: 2vw;
     color: #003049;
-    padding-top: 1%;
-    padding-bottom: 1%;
     font-weight: bold;
     font-style: Arial, Helvetica, sans-serif;
 
 }
+
 
 h2
 {
@@ -114,62 +123,104 @@ li
       
 }
     
-    /* LOGO */
-    
-.logo 
-{
-    
-    font-size: 1.5vw;
+    /*NAVBAR STYLING*/
+
+  /* NEW TOP NAVIGATION */
+.topNav {
+    background-color: #003049;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    padding: 0 20px 0 60px;
     font-weight: bold;
-    
-}
-    
-    /* NAVBAR MENU */
-    
-.menu 
-{
-    
+  }
+  
+  .topNav a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    font-size: 25px;
+    padding: 30px 0 30px 0;
+    border-left: solid white;
+  }
+  
+  .topNav_top2 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+  
+  #noline {
+    border-left: none;
+  }
+  
+  header{
+    position: relative;
+    z-index: 1;
+  }
+  
+  
+  .navbar {
+    position: relative;
     display: flex;
+    background-color: #003049;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
+  
+  
+    }
     
-    gap: 5.5em;
+    .nav-links a {
     
-    font-size: 1.5vw;
-    font-weight: bold;
+    color: #003049;
     
-}
+    }
+    .nav-links a:hover {
     
-.menu li 
-{
-    
-    padding: 2% 14px;
-    
-}
+      color: #138fd1;
+      
+      transition: 0.3s ease;
+      
+      }
 
 .about-container
 {
+
     position: absolute;
-    width: 93vw;
+    width: 88vw;
     height: 1.5vw;
     background-color: #F2F7F9;
     padding-bottom: 85vh;
     margin-left: 2.6vw;
+
 }
 
-.about-img img
+.about-img
 {
-    float: left;
-    margin-left: 2%;
-    padding-right: 1.5%;
-    padding-bottom: 0.2%;
+    margin-top: -2%;
+}
+.about-img > *
+{
+    padding-left: 6%;
+    margin-bottom: 2%;
+    z-index: 1;
+    
 }
 
-.about-container p
+.about-container p 
 {
-    align-items: center;
     text-align: justify;
     font-size: 1.8vw;
-    padding: 2.5vh;
-    padding-left: 1.8vw;
-    margin-top: -0.5em ;
-    margin-bottom: 0.2em ;
+    margin-bottom: 2%;
+
+}
+
+.about-text
+{
+    margin-top: -40%;
+    margin-left: 40%;
+    padding-right: 6%;
 }
