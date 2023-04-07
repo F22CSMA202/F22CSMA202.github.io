@@ -204,7 +204,7 @@ r
   .menu li 
   {
       padding: 2% 14px;
-      padding-top: 14px;
+      /*padding-top: 14px;*/
   }
 
   .map-container {
