@@ -78,13 +78,14 @@ a {
 
   /* NEW TOP NAVIGATION */
 .topNav {
-  background-color: #003049;
+  background-color: transparent;
   display: grid;
   grid-template-columns: auto auto;
   align-items: center;
   padding: 0 20px 0 60px;
+  border-bottom: solid white;
 }
-
+    
 .topNav a{
   color: rgb(255, 255, 255);
   text-decoration: none;
@@ -94,6 +95,7 @@ a {
   padding: 30px 0 30px 0;
   border-left: solid white;
 }
+
 
 .topNav_top2 {
   display: grid;
