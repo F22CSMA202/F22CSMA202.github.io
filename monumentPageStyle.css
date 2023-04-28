@@ -1,51 +1,15 @@
-/* BASICS */
-* {
+html{
+  height: 100%;
+}
 
-    margin: 0;
-    
-    padding: 0;
-    
-    box-sizing: border-box;
-    
-    }
-    
-  body {
-    
-    font-family: "Acephimere", sans-serif;/*Acephimere was not available 
-    so I use an alternative*/
-    
-  }
-  
-    /*PARAGRAPHS*/
-    
-  pb
-  {
-        font-size: 2vw;
-        font-weight: bold;/* Set paragraph to bold*/
-  }
-      
-  b
-  {
-        font-size: 2vw;
-        font-weight: bold;
-        color:#41D3BD;/* Set paragraph to bold blue*/
-  }
-      
-  o
-  {
-        font-size: 2vw;
-        font-weight: bold;
-        color:#f4ac45;/* Set paragraph to bold orange */
-  }
-      
-  r
-  {
-        font-size: 2vw;
-        font-weight: bold;
-        color:#ff5964;/* Set paragraph to bold red */
-    }
-      
-      /*HEADERS*/
+body {
+  font-family: "Acephimere", sans-serif;
+  margin: 0;
+  overflow: hidden;
+  height: 100%;
+}
+   
+   /*HEADERS*/
     h1
     {
         font-size: 2vw;
@@ -93,9 +57,7 @@
     .menu {
     
     display: flex;
-    
     gap: 5.5em;
-    
     font-size: 1.5vw;
     font-weight: bold;
     
@@ -496,17 +458,7 @@
       position: absolute;
   }
 
-html{
-    height: 100%;
-}
 
-body {
-    font-family: "Acephimere", "Sans Serif";
-    margin: 0;
-    overflow: hidden;
-    height: 100%;
-    font-family: "Acephimere", sans-serif;
-}
 
 
 /* Scroll Bar */
@@ -544,16 +496,14 @@ body {
 .description {
     width: 45%;
     height: 100%;
-    margin: 0;
-    background-color: rgb(196, 196, 196);
+    background-color: #FFFFFF;
     overflow-y: scroll;
 }
-
-
 
 .descriptionContent {
     margin: 5% 5%;
     height: 100%;
+    margin-bottom: 5%;
 }
 
 .QR {
@@ -561,7 +511,6 @@ body {
     justify-content: flex-start;
     flex-wrap: wrap;
     margin-bottom: 5%;
-    padding: 0;
 }
 
 #QRCode {
@@ -570,13 +519,15 @@ body {
 
 
 .title {
+    width: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-    column-gap: 10%;
+    gap: 10%;
     font-size: 32pt;
     font-weight: bold;
     color: black;
+    margin-bottom: 1%;
 }
 
 .Name {
@@ -584,9 +535,13 @@ body {
 }
 
 .itemDescription {
-    font-size: 16px;
     color: black;
-    margin-bottom: 20%;
+    padding-bottom: 20%;
+}
+
+p {
+  font-size: 14pt;
+  line-height: normal;
 }
 
 /* BUTTONS */
