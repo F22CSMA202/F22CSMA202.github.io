@@ -60,6 +60,10 @@ p{
     overflow-wrap: break-word;
 }
 
+.itemInfo p{
+    height: 120px;
+}
+
 /* 16:9 IMAGE ASPECT RATIO*/
 .imgRatio {
     position: relative;
