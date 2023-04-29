@@ -99,9 +99,7 @@ r
   .menu {
   
   display: flex;
-  
   gap: 5.5em;
-  
   font-size: 1.5vw;
   font-weight: bold;
   
@@ -135,6 +133,7 @@ r
 .topNav_top2 {
   display: grid;
   grid-template-columns: auto auto auto auto;
+  z-index: 3;
 }
 
 #noline {
@@ -204,12 +203,14 @@ r
   .menu li 
   {
       padding: 2% 14px;
-      /*padding-top: 14px;*/
+      z-index: 3;
   }
+
+
 
   .map-container {
     margin-top: -4%;
-    margin-left: 10%;
+    margin-left: 14.5%;
      position: relative;
      width: 80%;
      height: 80%;
@@ -217,6 +218,16 @@ r
      overflow: hidden;
 
    }
+
+   .legend-container {
+    position: absolute;
+    top: 22%;
+    left: 7%;
+    width: 18%;
+    height: 64%;
+    overflow: hidden;
+    z-index: 2;
+  }
    
    .kioskMap {
 
@@ -236,6 +247,7 @@ r
     object-fit: cover;
   }
 
+  /*Kit*/
   .overlay1 {
     position: absolute;
     height: 9%;
@@ -243,220 +255,19 @@ r
     transition: .3s ease;
     background-color: transparent;
     transform: rotate(-90deg);
-    top: 25%;
+    top: 28%;
     bottom: 0;
-    left: 53.4%;
+    left: 57.8%;
     right: 0;
+    filter: drop-shadow(-4px 2px 2px #0000007b);
 }
 
 .overlay1:hover {
     opacity: 0.7;
 }
 
+/*Frog*/
 .overlay2 {
-  position: absolute;
-  height: 9%;
-  width: 9%;
-  transition: .3s ease;
-  background-color: transparent;
-  transform: rotate(-90deg);
-  top: 35%;
-  bottom: 0;
-  left: 26.5%;
-  right: 0;
-}
-
-.overlay2:hover {
-  opacity: 0.7;
-}
-.overlay3{
-  position: absolute;
-  height: 9%;
-  width: 9%;
-  transition: .3s ease;
-  background-color: transparent;
-  transform: rotate(-90deg);
-  top: 33%;
-  bottom: 0;
-  left: 81.6%;
-  right: 0;
-}
-
-.overlay3:hover {
-  opacity: 0.7;
-}
-.overlay4 {
-  position: absolute;
-  height: 9%;
-  width: 9%;
-  transition: .3s ease;
-  background-color: transparent;
-  transform: rotate(90deg);
-  top: 53%;
-  bottom: 0;
-  left: 70.4%;
-  right: 0;
-}
-
-.overlay4:hover {
-  opacity: 0.7;
-}
-.overlay5 {
-  position: absolute;
-  height: 9%;
-  width: 9%;
-  transition: .3s ease;
-  background-color: transparent;
-  transform: rotate(180deg);
-  top: 74%;
-  bottom: 0;
-  left: 24%;
-  right: 0;
-}
-
-.overlay5:hover {
-  opacity: 0.7;
-}
-.overlay6 {
-  position: absolute;
-  height: 9%;
-  width: 9%;
-  transition: .3s ease;
-  background-color: transparent;
-  top: 16%;
-  bottom: 0;
-  left: 25%;
-  right: 0;
-}
-
-.overlay6:hover {
-  opacity: 0.7;
-}
-.overlay7 {
-  position: absolute;
-  height: 9%;
-  width: 9%;
-  transition: .3s ease;
-  background-color: transparent;
-  top: 65%;
-  bottom: 0;
-  left: 39.5%;
-  right: 0;
-}
-
-.overlay7:hover {
-  opacity: 0.7;
-}
-.overlay8 {
-  position: absolute;
-  height: 9%;
-  width: 9%;
-  transition: .3s ease;
-  background-color: transparent;
-  transform: rotate(90deg);
-  top: 80%;
-  bottom: 0;
-  left: 54%;
-  right: 0;
-}
-
-.overlay8:hover {
-  opacity: 0.7;
-}
-.overlay9 {
-  position: absolute;
-  height: 9%;
-  width: 9%;
-  transition: .3s ease;
-  background-color: transparent;
-  top: 43.1%;
-  bottom: 0;
-  left: 60.8%;
-  right: 0;
-}
-
-.overlay9:hover {
-  opacity: 0.7;
-}
-.overlay10 {
-  position: absolute;
-  height: 9%;
-  width: 9%;
-  transition: .3s ease;
-  background-color: transparent;
-  top: 55%;
-  bottom: 0;
-  left: 33%;
-  right: 0;
-}
-
-.overlay10:hover {
-  opacity: 0.7;
-}
-.overlay11 {
-  position: absolute;
-  height: 9%;
-  width: 9%;
-  transition: .3s ease;
-  background-color: transparent;
-  transform: rotate(90deg);
-  top: 80%;
-  bottom: 0;
-  left: 16.4%;
-  right: 0;
-}
-
-.overlay11:hover {
-  opacity: 0.7;
-}
-.overlay12 {
-  position: absolute;
-  height: 9%;
-  width: 9%;
-  transition: .3s ease;
-  background-color: transparent;
-  top: 62.5%;
-  bottom: 0;
-  left: 75%;
-  right: 0;
-}
-
-.overlay12:hover {
-  opacity: 0.7;
-}
-.overlay13 {
-  position: absolute;
-  height: 9%;
-  width: 9%;
-  transition: .3s ease;
-  background-color: transparent;
-  transform: rotate(90deg);
-  top: 30%;
-  bottom: 0;
-  left: 44%;
-  right: 0;
-}
-
-.overlay13:hover {
-  opacity: 0.7;
-}
-.overlay14 {
-  position: absolute;
-  height: 9%;
-  width: 9%;
-  transition: .3s ease;
-  background-color: transparent;
-  transform: rotate(90deg);
-  top: 65%;
-  bottom: 0;
-  left: 16.3%;
-  right: 0;
-}
-
-.overlay14:hover {
-  opacity: 0.7;
-}
-.overlay15 {
   position: absolute;
   height: 9%;
   width: 9%;
@@ -465,13 +276,258 @@ r
   transform: rotate(-90deg);
   top: 38%;
   bottom: 0;
-  left: 67%;
+  left: 30.8%;
   right: 0;
+  filter: drop-shadow(-4px 0px 2px #0000007b);
+}
+
+.overlay2:hover {
+  opacity: 0.7;
+}
+
+/*Plane*/
+.overlay3{
+  position: absolute;
+  height: 9%;
+  width: 9%;
+  transition: .3s ease;
+  background-color: transparent;
+  transform: rotate(-90deg);
+  top: 36%;
+  bottom: 0;
+  left: 86%;
+  right: 0;
+  filter: drop-shadow(-4px -3.5px 2px #0000007b);
+}
+
+.overlay3:hover {
+  opacity: 0.7;
+}
+
+/*House*/
+.overlay4 {
+  position: absolute;
+  height: 9%;
+  width: 9%;
+  transition: .3s ease;
+  background-color: transparent;
+  transform: rotate(90deg);
+  top: 57.6%;
+  bottom: 0;
+  left: 74.9%;
+  right: 0;
+  filter: drop-shadow(4px 0px 2px #0000007b);
+}
+
+.overlay4:hover {
+  opacity: 0.7;
+}
+
+/*Flower*/
+.overlay5 {
+  position: absolute;
+  height: 9%;
+  width: 9%;
+  transition: .3s ease;
+  background-color: transparent;
+  transform: rotate(180deg);
+  top: 80%;
+  bottom: 0;
+  left: 28%;
+  right: 0;
+  filter: drop-shadow(-4px -2px 2px #0000007b);
+}
+
+.overlay5:hover {
+  opacity: 0.7;
+}
+
+/*Grapes*/
+.overlay6 {
+  position: absolute;
+  height: 9%;
+  width: 9%;
+  transition: .3s ease;
+  background-color: transparent;
+  top: 20%;
+  bottom: 0;
+  left: 29.5%;
+  right: 0;
+  filter: drop-shadow(4px 3.5px 2px #0000007b);
+}
+
+.overlay6:hover {
+  opacity: 0.7;
+}
+
+/*Pattern*/
+.overlay7 {
+  position: absolute;
+  height: 9%;
+  width: 9%;
+  transition: .3s ease;
+  background-color: transparent;
+  top: 70%; /*added 3%*/
+  bottom: 0;
+  left: 43.9%;
+  right: 0;
+  filter: drop-shadow(-4px 3.5px 2px #0000007b);
+}
+
+.overlay7:hover {
+  opacity: 0.7;
+}
+
+/*Oscar*/
+.overlay8 {
+  position: absolute;
+  height: 9%;
+  width: 9%;
+  transition: .3s ease;
+  background-color: transparent;
+  transform: rotate(90deg);
+  top: 87%;
+  bottom: 0;
+  left: 58.5%;
+  right: 0;
+  filter: drop-shadow(4px -2px 2px #0000007b);
+}
+
+.overlay8:hover {
+  opacity: 0.7;
+}
+
+/*TV*/
+.overlay9 {
+  position: absolute;
+  height: 9%;
+  width: 9%;
+  transition: .3s ease;
+  background-color: transparent;
+  top: 47.5%;
+  bottom: 0;
+  left: 64.8%;
+  right: 0;
+  filter: drop-shadow(3.5px -1px 2px #0000007b);
+}
+
+.overlay9:hover {
+  opacity: 0.7;
+}
+
+/*Signs*/
+.overlay10 {
+  position: absolute;
+  height: 9%;
+  width: 9%;
+  transition: .3s ease;
+  background-color: transparent;
+  top: 59%;
+  bottom: 0;
+  left: 37%;
+  right: 0;
+  filter: drop-shadow(4px -1px 2px #0000007b);
+}
+
+.overlay10:hover {
+  opacity: 0.7;
+}
+
+/*Spanish Buildings*/
+.overlay11 {
+  position: absolute;
+  height: 9%;
+  width: 9%;
+  transition: .3s ease;
+  background-color: transparent;
+  transform: rotate(90deg);
+  top: 86%;
+  bottom: 0;
+  left: 20.8%;
+  right: 0;
+  filter: drop-shadow(4px -1px 2px #0000007b);
+}
+
+.overlay11:hover {
+  opacity: 0.7;
+}
+
+/*Bell*/
+.overlay12 {
+  position: absolute;
+  height: 9%;
+  width: 9%;
+  transition: .3s ease;
+  background-color: transparent;
+  top: 66.9%;
+  bottom: 0;
+  left: 79%;
+  right: 0;
+  filter: drop-shadow(4px 3.5px 2px #0000007b);
+}
+
+.overlay12:hover {
+  opacity: 0.7;
+}
+
+/*Train*/
+.overlay13 {
+  position: absolute;
+  height: 9%;
+  width: 9%;
+  transition: .3s ease;
+  background-color: transparent;
+  transform: rotate(90deg);
+  top: 33%;
+  bottom: 0;
+  left: 48.5%;
+  right: 0;
+  filter: drop-shadow(4px -2.5px 2px #0000007b);
+}
+
+.overlay13:hover {
+  opacity: 0.7;
+}
+
+/*Movie*/
+.overlay14 {
+  position: absolute;
+  height: 9%;
+  width: 9%;
+  transition: .3s ease;
+  background-color: transparent;
+  transform: rotate(90deg);
+  top: 70%;
+  bottom: 0;
+  left: 20.8%;
+  right: 0;
+  filter: drop-shadow(3px -2px 2px #0000007b);
+}
+
+.overlay14:hover {
+  opacity: 0.7;
+}
+
+/*Car*/
+.overlay15 {
+  position: absolute;
+  height: 9%;
+  width: 9%;
+  transition: .3s ease;
+  background-color: transparent;
+  transform: rotate(-90deg);
+  top: 41%;
+  bottom: 0;
+  left: 71.5%;
+  right: 0;
+  filter: drop-shadow(-3px -3.5px 2px #0000007b);
 }
 
 .overlay15:hover {
   opacity: 0.7;
 }
+
+/*ID*/
 .overlay16 {
   position: absolute;
   height: 9%;
@@ -479,10 +535,11 @@ r
   transition: .3s ease;
   background-color: transparent;
   transform: rotate(-90deg);
-  top: 24%;
+  top: 27%;
   bottom: 0;
-  left: 66.6%;
+  left: 71.1%;
   right: 0;
+  filter: drop-shadow(-3px -3.5px 2px #0000007b);
 }
 
 .overlay16:hover {

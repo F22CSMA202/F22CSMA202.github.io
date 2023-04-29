@@ -1,0 +1,562 @@
+html{
+  height: 100%;
+}
+
+body {
+  font-family: "Acephimere", sans-serif;
+  margin: 0;
+  overflow: hidden;
+  height: 100%;
+}
+   
+   /*HEADERS*/
+    h1
+    {
+        font-size: 2vw;
+        color: #003049;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        font-weight: bold;
+        font-style: Arial, Helvetica, sans-serif;
+    
+    }
+    
+    h2
+    {
+        color: #003049;
+        font-size: 1.5vw;
+    }
+      
+    a 
+    {
+        
+        text-decoration: none;
+        
+    }
+        
+    li
+    {
+        
+        list-style: none;
+        
+    }
+      
+  
+     /* } */ 
+    
+    /* LOGO */
+    
+    .logo {
+  
+      font-size: 1.5vw;
+      font-weight: bold;
+    }
+    
+    /* NAVBAR MENU */
+    
+    .menu {
+    
+    display: flex;
+    gap: 5.5em;
+    font-size: 1.5vw;
+    font-weight: bold;
+    
+    }
+    
+    .menu li {
+    
+    padding: 2% 14px;
+        
+    }
+  
+  /* NEW TOP NAVIGATION */
+  .topNav {
+    background-color: #003049;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    padding: 0 20px 0 60px;
+  }
+  
+  .topNav a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    font-size: 25px;
+    padding: 30px 0 30px 0;
+    border-left: solid white;
+  }
+  
+  .topNav_top2 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+  
+  #noline {
+    border-left: none;
+  }
+  
+        /*NAVBAR STYLING*/
+    .navbar 
+    {
+        z-index: 3;
+        
+        display: flex;
+      
+        align-items: center;
+        
+        justify-content: space-between;
+        
+        padding: 1%;
+        padding-left: 10%;
+        padding-right: 10%;
+        
+        background-color: rgba(255, 255, 255, 0);
+        
+        color: #003049;
+       
+    }
+        
+        .nav-links a 
+    {
+        
+        color: #003049;
+        
+    }
+    
+    .nav-links a:hover 
+    {
+    
+        color: #138fd1;
+          
+        transition: 0.3s ease;
+          
+    }
+        
+        /* LOGO */
+        
+    .logo 
+    {
+        
+        font-size: 1.5vw;
+        font-weight: bold;
+        
+    }
+        
+        /* NAVBAR MENU */
+        
+    .menu 
+    {
+        display: flex;
+        
+        gap: 5.5em;
+        
+        font-size: 1.5vw;
+        font-weight: bold;
+        
+    }
+        
+    .menu li 
+    {
+        padding: 2% 14px;
+        /*padding-top: 14px;*/
+    }
+  
+    .map-container {
+      margin-top: -4%;
+      margin-left: 10%;
+       position: relative;
+       width: 80%;
+       height: 80%;
+       object-fit: cover;
+       overflow: hidden;
+  
+     }
+     
+     .kioskMap {
+  
+        /* Full height */
+        height: 100%;
+  
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+     }
+  
+     img{
+      display:block;
+      width:100%; 
+      height:100%;
+      object-fit: cover;
+    }
+  
+    .overlay1 {
+      position: absolute;
+      height: 9%;
+      width: 9%;
+      transition: .3s ease;
+      background-color: transparent;
+      transform: rotate(-90deg);
+      top: 25%;
+      bottom: 0;
+      left: 53.4%;
+      right: 0;
+  }
+  
+  .overlay1:hover {
+      opacity: 0.7;
+  }
+  
+  .overlay2 {
+    position: absolute;
+    height: 9%;
+    width: 9%;
+    transition: .3s ease;
+    background-color: transparent;
+    transform: rotate(-90deg);
+    top: 35%;
+    bottom: 0;
+    left: 26.5%;
+    right: 0;
+  }
+  
+  .overlay2:hover {
+    opacity: 0.7;
+  }
+  .overlay3{
+    position: absolute;
+    height: 9%;
+    width: 9%;
+    transition: .3s ease;
+    background-color: transparent;
+    transform: rotate(-90deg);
+    top: 33%;
+    bottom: 0;
+    left: 81.6%;
+    right: 0;
+  }
+  
+  .overlay3:hover {
+    opacity: 0.7;
+  }
+  .overlay4 {
+    position: absolute;
+    height: 9%;
+    width: 9%;
+    transition: .3s ease;
+    background-color: transparent;
+    transform: rotate(90deg);
+    top: 53%;
+    bottom: 0;
+    left: 70.4%;
+    right: 0;
+  }
+  
+  .overlay4:hover {
+    opacity: 0.7;
+  }
+  .overlay5 {
+    position: absolute;
+    height: 9%;
+    width: 9%;
+    transition: .3s ease;
+    background-color: transparent;
+    transform: rotate(180deg);
+    top: 74%;
+    bottom: 0;
+    left: 24%;
+    right: 0;
+  }
+  
+  .overlay5:hover {
+    opacity: 0.7;
+  }
+  .overlay6 {
+    position: absolute;
+    height: 9%;
+    width: 9%;
+    transition: .3s ease;
+    background-color: transparent;
+    top: 16%;
+    bottom: 0;
+    left: 25%;
+    right: 0;
+  }
+  
+  .overlay6:hover {
+    opacity: 0.7;
+  }
+  .overlay7 {
+    position: absolute;
+    height: 9%;
+    width: 9%;
+    transition: .3s ease;
+    background-color: transparent;
+    top: 65%;
+    bottom: 0;
+    left: 39.5%;
+    right: 0;
+  }
+  
+  .overlay7:hover {
+    opacity: 0.7;
+  }
+  .overlay8 {
+    position: absolute;
+    height: 9%;
+    width: 9%;
+    transition: .3s ease;
+    background-color: transparent;
+    transform: rotate(90deg);
+    top: 80%;
+    bottom: 0;
+    left: 54%;
+    right: 0;
+  }
+  
+  .overlay8:hover {
+    opacity: 0.7;
+  }
+  .overlay9 {
+    position: absolute;
+    height: 9%;
+    width: 9%;
+    transition: .3s ease;
+    background-color: transparent;
+    top: 43.1%;
+    bottom: 0;
+    left: 60.8%;
+    right: 0;
+  }
+  
+  .overlay9:hover {
+    opacity: 0.7;
+  }
+  .overlay10 {
+    position: absolute;
+    height: 9%;
+    width: 9%;
+    transition: .3s ease;
+    background-color: transparent;
+    top: 55%;
+    bottom: 0;
+    left: 33%;
+    right: 0;
+  }
+  
+  .overlay10:hover {
+    opacity: 0.7;
+  }
+  .overlay11 {
+    position: absolute;
+    height: 9%;
+    width: 9%;
+    transition: .3s ease;
+    background-color: transparent;
+    transform: rotate(90deg);
+    top: 80%;
+    bottom: 0;
+    left: 16.4%;
+    right: 0;
+  }
+  
+  .overlay11:hover {
+    opacity: 0.7;
+  }
+  .overlay12 {
+    position: absolute;
+    height: 9%;
+    width: 9%;
+    transition: .3s ease;
+    background-color: transparent;
+    top: 62.5%;
+    bottom: 0;
+    left: 75%;
+    right: 0;
+  }
+  
+  .overlay12:hover {
+    opacity: 0.7;
+  }
+  .overlay13 {
+    position: absolute;
+    height: 9%;
+    width: 9%;
+    transition: .3s ease;
+    background-color: transparent;
+    transform: rotate(90deg);
+    top: 30%;
+    bottom: 0;
+    left: 44%;
+    right: 0;
+  }
+  
+  .overlay13:hover {
+    opacity: 0.7;
+  }
+  .overlay14 {
+    position: absolute;
+    height: 9%;
+    width: 9%;
+    transition: .3s ease;
+    background-color: transparent;
+    transform: rotate(90deg);
+    top: 65%;
+    bottom: 0;
+    left: 16.3%;
+    right: 0;
+  }
+  
+  .overlay14:hover {
+    opacity: 0.7;
+  }
+  .overlay15 {
+    position: absolute;
+    height: 9%;
+    width: 9%;
+    transition: .3s ease;
+    background-color: transparent;
+    transform: rotate(-90deg);
+    top: 38%;
+    bottom: 0;
+    left: 67%;
+    right: 0;
+  }
+  
+  .overlay15:hover {
+    opacity: 0.7;
+  }
+  .overlay16 {
+    position: absolute;
+    height: 9%;
+    width: 9%;
+    transition: .3s ease;
+    background-color: transparent;
+    transform: rotate(-90deg);
+    top: 24%;
+    bottom: 0;
+    left: 66.6%;
+    right: 0;
+  }
+  
+  .overlay16:hover {
+    opacity: 0.7;
+  }
+  .play-icon {
+      position: absolute;
+      color: black;
+      cursor: pointer;
+      left: 50%;
+      bottom: 50%;
+  }
+  
+  .fa-play {
+      position: absolute;
+      z-index: 2;
+      position: absolute;
+  }
+
+
+
+
+/* Scroll Bar */
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 0px;
+}
+
+
+/* Item Images */
+
+.images {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    width: 55%;
+    left: 0;
+    float: left;
+    overflow-y: scroll;
+}
+
+.images img {
+    left: 0;
+    margin-bottom: 1%;
+}
+
+
+/* Description*/
+
+.description {
+    width: 45%;
+    height: 100%;
+    background-color: #FFFFFF;
+    overflow-y: scroll;
+}
+
+.descriptionContent {
+    margin: 5% 5%;
+    height: 100%;
+    margin-bottom: 5%;
+}
+
+.QR {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+}
+
+#QRCode {
+    width: 30%;
+}
+
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10%;
+    font-size: 32pt;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 1%;
+}
+
+.Name {
+    margin-bottom: 5%;
+}
+
+.itemDescription {
+    color: black;
+    padding-bottom: 20%;
+}
+
+p {
+  font-size: 14pt;
+  line-height: normal;
+}
+
+/* BUTTONS */
+.button {
+  justify-content: right;
+  border: solid;
+  background-color: white;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+  align-self: center;
+  padding: 10px;
+  width: 200px;
+}
