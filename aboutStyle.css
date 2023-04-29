@@ -53,10 +53,13 @@ r
     padding-left: 40%;
     padding-top: 1%;
     z-index: 2;
+
     
 }
 
-h1{
+h1
+{
+    
     font-size: 2vw;
     color: #003049;
     font-weight: bold;
@@ -64,83 +67,140 @@ h1{
 
 }
 
-h2{
+
+h2
+{
     font-size: 1.8vw;
 }
   
-a {
+a 
+{
+    
     text-decoration: none;
     
 }
     
-li{
+li
+{
+    
     list-style: none;
     
 }
+  
+    /*NAVBAR STYLING*/
+.navbar 
+{
+  
+    display: flex;
+  
+    align-items: center;
+    
+    justify-content: space-between;
+    
+    padding: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+    background-color: rgba(255, 255, 255, 0);
+    
+    color: #003049;
+   
+}
+    
+    .nav-links a 
+{
+    
+    color: #003049;
+    
+}
+
+.nav-links a:hover 
+{
+
+    color: #138fd1;
+      
+    transition: 0.3s ease;
+      
+}
+    
+    /*NAVBAR STYLING*/
 
   /* NEW TOP NAVIGATION */
-  .logo {
-    font-weight: bold;
-    
-  }
-
 .topNav {
     background-color: #003049;
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
     padding: 0 20px 0 60px;
-    
-}
+    font-weight: bold;
+  }
   
-.topNav a{
+  .topNav a{
     color: rgb(255, 255, 255);
     text-decoration: none;
+    font-size: 18px;
     text-align: center;
-    font-size: 156%;
+    font-size: 25px;
     padding: 30px 0 30px 0;
     border-left: solid white;
-
-}
-
-.topNav a:hover{
-    color:#f4ac45;
-}
+  }
   
-.topNav_top2 {
+  .topNav_top2 {
     display: grid;
     grid-template-columns: auto auto auto auto;
-
-}
+  }
   
-#noline {
+  #noline {
     border-left: none;
-
-}
-
-header{
+  }
+  
+  header{
     position: relative;
     z-index: 1;
-
-}
+  }
+  
+  
+  .navbar {
+    position: relative;
+    display: flex;
+    background-color: #003049;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
+  
+  
+    }
+    
+    .nav-links a {
+    
+    color: #003049;
+    
+    }
+    .nav-links a:hover {
+    
+      color: #138fd1;
+      
+      transition: 0.3s ease;
+      
+      }
 
 .about-container
 {
-    margin-top: 1%;
-    padding-top: 1%;
+
     position: absolute;
     width: 88vw;
     height: 1.5vw;
     background-color: #F2F7F9;
-    padding-bottom: 82vh;
+    padding-bottom: 85vh;
     margin-left: 2.6vw;
-    margin-right: 2.6vw;
 
 }
 
 .about-img
 {
-    margin-top: -3.55%;
+    margin-top: -2%;
 }
 .about-img > *
 {
@@ -153,14 +213,14 @@ header{
 .about-container p 
 {
     text-align: justify;
-    font-size: 1.4vw;
-    margin-bottom: 3%;
+    font-size: 1.8vw;
+    margin-bottom: 2%;
 
 }
 
 .about-text
 {
-    margin-top: -41%;
+    margin-top: -40%;
     margin-left: 40%;
     padding-right: 6%;
 }
