@@ -1,0 +1,181 @@
+<!-- 
+DEVELOPER NOTES
+-Assigned to ZULLY
+-include nav bar
+-for thumbnail images, use whatever is already in the shared data folder
+https://woodburyedu.sharepoint.com/:f:/r/sites/2023_SPRING_CSMA.311.S1/Shared%20Documents/Mapping%20Burbank?csf=1&web=1&e=JNfDDC
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MappingBurbank - Film Industry (Tour)</title>
+    <link href="itemPageTourstyles.css" rel="stylesheet" type="text/css">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<!-- NAV BAR -->
+<header>
+    <div class="topNav">
+          <div class="logo">
+              <a id="noline" href ="index.html">Mapping <br/> Burbank</a>
+          </div>
+  
+          <div class="topNav_top2">
+              <a href="monumentGrid.html">Monuments</a>
+  
+              <a href="tourGrid.html">Stories</a>
+  
+              <a href="about.html">About The Project</a>
+  
+              <a href="map.html">Map</a>
+          </div>
+        </div>
+      </ul>
+    </nav>
+  </header>
+
+<body>
+
+    <!-- PAGE INDEX -->
+    <!-- CHANGE ID TO MATCH COLOR THEME indexInfoText(1, 2, 3)-->
+    <h3 id="indexInfoText2">
+        Stories / Culture / Film Industry
+    </h3>
+
+    <div class="container3">
+        <!-- CHANGE STUDENT'S PROJECT TITLE -->
+        <!-- CHANGE ID TO MATCH COLOR THEME pageTourHeader(1, 2, 3)-->
+        <h1 id="pageTourHeader2">
+            Film Industry
+        </h1>
+        <!-- UPDATE LINK TO CORRESPONDING MONUMENT LINK-->
+<<<<<<< HEAD
+        <a href="monumentGrid.html">
+            <button  class="button">To Monument</button>
+        </a>
+=======
+        
+>>>>>>> 7dd84ada5428d7c2cf6395b456fc70f732f98877
+    </div>
+
+    <div class="container"> 
+        <div class="subCon1">
+            <div class="vidRatio">
+                <!-- UPDATE VIDEO LINK OR VIDEO ASSET-->
+                <iframe class="responsive-iframe" src="https://www.youtube.com/embed/zqLEO5tIuYs"></iframe>
+            </div>
+
+            <div>
+                <!-- UPDATE TEXT SUMMARY-->
+                <p class="sumText">
+                    The history of film has it’s roots in the city of Burbank since the 1920s. With the 
+relocation of Warner Brothers Studios from Hollywood to Burbank, the city became the 
+entertainment landscape and a fresh start for the moving images. Today Burbank is 
+infamous for it’s Media District, that houses the most recognizable movie studios in the 
+world; from NBC to Walt Disney. What unites all these studios together, is not only the 
+landscape they share, but the stories they create. These stories are the core of the film. They 
+allow us, the viewers, to step outside of our day-to-day life and step into an alternate reality. 
+In this reality, we become the spectators, the passive participants, that empathize with the 
+heroes and resent the villains. Triggers such as predetermined pictures, colors and sounds 
+guide us to become closer to the story. We begin to experience a world that is no longer 
+real or our own. And yet we cry, laugh and express various emotions that subconsciously 
+leave us in the fictional reality of the movie. However, by the end, with the roll of the credits, 
+we are forced to step outside of this world and return to our own reality. We continue to 
+seek possibilities of how to infuse the fictional reality of the movies into our own life. 
+Whether in form of dressing up like the movie characters or redesigning our houses to 
+recreate the atmosphere of our beloved movies, we continuously search for the formula that 
+will allow a complete infusion of the two worlds. <br>
+<br>
+The foundation of this augmented reality experience is the desire to enable the 
+viewer to not be confined by space or location, in order to experience the fictional reality of 
+the movies. By mapping the locations where the crucial scenes of the movies were 
+produced, a unique model of maze has been created. This augmented reality maze allows 
+the viewers to truly feel amerced into the fictional world of the movie and briefly transform 
+from a passive to an active user. With the help of AR, in each of these locations, the user is 
+given opportunity to subconsciously interact with the movie scene in the fictional world by 
+physically being in the real world where the movie was filmed. The negative space of the 
+scene and corresponding digital imagery allow the reality and fiction to collide
+            
+                </p>
+            </div>
+        </div>
+        
+        <div class="subCon2">
+            <div class="container2">
+                <div class="imgRatio">
+                    <!-- UPDATE ID CARD IMAGE-->
+                    <img class="responsive-img" src="images/Triggers/Film Industry.jpg">
+                </div>
+
+                <div class="slideshow-container">
+
+                    <!-- DUPLICATE AS MANY SLIDE NEEDED-->
+                    <!-- UPDATE IMAGE (ALL IMAGES WILL FIT INTO A 1:1 ASPECT-RATIO)-->
+                    <div class="Slides">
+                        <div class="imgRatio">
+                            <img class="responsive-img" src="images/Culture/Sona - Film Industry/Images/HANGOVER.png">
+                        </div>
+                    </div>
+
+                    <div class="Slides">
+                        <div class="imgRatio">
+                            <img class="responsive-img" src="images/Culture/Sona - Film Industry/Images/HE'S NOT THAT INTO YOU.png">
+                        </div>
+                    </div>
+
+                    <div class="Slides">
+                        <div class="imgRatio">
+                            <img class="responsive-img" src="images/Culture/Sona - Film Industry/Images/LA LA LAND.png">
+                        </div>
+                    </div>
+
+                    <div class="Slides">
+                        <div class="imgRatio">
+                            <img class="responsive-img" src="images/Culture/Sona - Film Industry/Images/movie-gc95514181_1280.png">
+                        </div>
+                    </div>
+                    
+
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
+
+            </div>
+            
+        </div>
+
+    </div>
+
+
+    <!-- JS SLIDES SHOW -->
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("Slides");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+    </script>
+
+</body>
+
+</html>

@@ -89,7 +89,7 @@ Test
         <!-- PROJECT -->
         <div class="itemCards">
             <div class="imgRatio">
-                <img class="responsive-img" src="images/Thumbnails/History/Angel - Lockheed and Aviation.jpeg">
+                <img class="responsive-img" src="images\Thumbnails\wolf-schram-gjGN93ExMGw-unsplash.jpg">
             </div>
 
             <div class="itemInfo">
@@ -98,30 +98,38 @@ Test
                 <!-- UPDATE STUDENT'S NAME -->
                 <hr>
                 <!-- UPDATE STUDENT'S SUMMARY -->
-                <p2>This section showcases the Mapping Burbank's History, 
-                    contributionns to the community, and its impact on the
-                    cultural landscape of Burbank.
+                <p2>This section showcases Burbank's rich history, 
+                  which includes major transportation and military projects, 
+                  as well as a deep Native American and Spanish Heritage.
                 </p2>
                 <!-- UPDATE BUTTON LINK TO CORRESPONDING PROJECT -->
-                <a href="tourGrid.html/#historyAnchor">
+                <a href="tourGrid.html#historyAnchor">
                     <button class="button button1">Learn More</button>
                 </a>
             </div>
 
         </div>
 
+
         <!-- PROJECT -->
         <div class="itemCards">
             <div class="imgRatio">
-                <img class="responsive-img" src="images/Thumbnails/History/Gael - Native American History.jpg">
+                <img class="responsive-img" src="images\Thumbnails\bayleigh-olson-znRGn-W6oNs-unsplash.jpg">
             </div>
             
             <div class="itemInfo">
                 <!-- UPDATE STUDENT'S PROJECT TITLE -->
                 <h3 id="pTitle">Culture</h3>
                 <!-- UPDATE STUDENT'S NAME -->
-              
-                <a href="tourGrid.html">
+                <hr>
+                <!-- UPDATE STUDENT'S SUMMARY -->
+                <p2> 
+                  This section showcases Burbank's rich culture, 
+                  which includes its sprawling entertainment industry alongside a Southern Californian 
+                  car culture and unique architectural backdrop.
+
+                </p2>
+                <a href="tourGrid.html#cultureAnchor">
                     <button class="button button2">Learn More</button>
                 </a>
             </div>
@@ -131,7 +139,7 @@ Test
         <!-- PROJECT -->
         <div class="itemCards">
             <div class="imgRatio">
-                <img class="responsive-img" src="images/Thumbnails/History/Loc - Street Names.png">
+                <img class="responsive-img" src="images\Thumbnails\andre-simoes-iXFaSMIVYoo-unsplash.jpg">
             </div>
 
             <div class="itemInfo">
@@ -140,12 +148,11 @@ Test
                 <!-- UPDATE STUDENT'S NAME -->
                 <hr>
                 <!-- UPDATE STUDENT'S SUMMARY -->
-                <p2>This section showcases the university's rich history, 
-                    contributionns to the community, and its impact on the
-                    cultural landscape of Burbank.
+                <p2>This section showcases Burbank's rich ecology, which includes native flora and fauna endemic to Southern California as well as the region's wine production.
+
                 </p2>
                 <!-- UPDATE BUTTON LINK TO CORRESPONDING PROJECT -->
-                <a href="tourGrid.html">
+                <a href="tourGrid.html#ecologyAnchor">
                     <button class="button button3">Learn More</button>
                 </a>
             </div>
@@ -154,30 +161,6 @@ Test
 
     </div>
         
-<!-- JS SLIDES SHOW -->
-<script>
-  let slideIndex = 1;
-  showSlides(slideIndex);
-  
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-  
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-  
-  function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("Slides");
-    if (n > slides.length) {slideIndex = 1}    
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-  }
 </script>
 
 
