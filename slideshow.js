@@ -34,31 +34,53 @@ function showSlides(){
     var links = document.querySelectorAll('a[href*="#"]');
     for (var i = 0; i < links.length; i++) {
       links[i].addEventListener('click', function(e) {
-        e.preventDefault();
         var target = document.querySelector(this.hash);
-        var distance = target.getBoundingClientRect().top;
-        var start = window.pageYOffset;
-        var duration = 500;
-        var startTime = null;
-        function step(currentTime) {
-          if (startTime === null) {
-            startTime = currentTime;
-          }
-          var timeElapsed = currentTime - startTime;
-          var run = ease(timeElapsed, start, distance, duration);
-          window.scrollTo(0, run);
-          if (timeElapsed < duration) {
-            requestAnimationFrame(step);
+        if (target) {
+          var targetId = target.id.startsWith('section') ? target.id : 'section' + target.id;
+          smoothScroll(targetId);
+          if (window.location.pathname === target.pathname) {
+            e.preventDefault();
+            history.pushState(null, null, '#' + targetId);
           }
         }
-        function ease(t, b, c, d) {
-          t /= d / 2;
-          if (t < 1) return c / 2 * t * t + b;
-          t--;
-          return -c / 2 * (t * (t - 2) - 1) + b;
-        }
-        requestAnimationFrame(step);
       });
+    }
+  
+    function smoothScroll(target) {
+      var targetElem = document.getElementById(target);
+      var distance = targetElem.getBoundingClientRect().top;
+      var start = window.pageYOffset;
+      var duration = 500;
+      var startTime = null;
+  
+      function step(currentTime) {
+        if (startTime === null) {
+          startTime = currentTime;
+        }
+        var timeElapsed = currentTime - startTime;
+        var run = ease(timeElapsed, start, distance, duration);
+        window.scrollTo(0, run);
+        if (timeElapsed < duration) {
+          requestAnimationFrame(step);
+        } else {
+          window.removeEventListener('scroll', scrollListener);
+        }
+      }
+  
+      function ease(t, b, c, d) {
+        t /= d / 2;
+        if (t < 1) return c / 2 * t * t + b;
+        t--;
+        return -c / 2 * (t * (t - 2) - 1) + b;
+      }
+  
+      var scrollListener = function () {
+        cancelAnimationFrame(step);
+        window.removeEventListener('scroll', scrollListener);
+      };
+  
+      requestAnimationFrame(step);
+      window.addEventListener('scroll', scrollListener);
     }
   });
   
